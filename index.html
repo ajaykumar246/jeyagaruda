@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaya Garuda Enterprise Service Center - Trichy</title>
+  <meta name="description" content="Jaya Garuda Enterprise Service Center in Trichy offers expert repair & service for Washing Machines, ACs, Refrigerators, and Microwaves. 10+ years technician experience." />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+  <!-- HEADER -->
+ <header class="bg-blue-800 text-white shadow-lg">
+  
+  <div class="w-full mx-auto  flex justify-between items-center p-2">
+    <a class="flex items-center" href="index.html">
+    <img src="assets/icon.png" alt="Jaya Garuda Logo" class="h-10 w-15 mr-2"/>
+    <h1 class="text-xl font-bold">Jaya Garuda Enterprises</h1>
+    </a>
+    
+
+    <div class="md:hidden">
+      <button id="mobile-menu-button" class="text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="hidden md:flex space-x-3">
+      <a href="#services" class="px-3 py-2 rounded hover:text-yellow-300">Services</a>
+      <a href="#about" class="px-3 py-2 rounded hover:text-yellow-300">About</a>
+      <a href="#contact" class="px-3 py-2 rounded hover:text-yellow-300">Contact</a>
+    </nav>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden">
+    <nav class="flex flex-col px-2 pt-2 pb-4 space-y-1">
+      <a href="#services" class="block px-3 py-2 rounded hover:bg-blue-700 hover:text-yellow-300">Services</a>
+      <a href="#about" class="block px-3 py-2 rounded hover:bg-blue-700 hover:text-yellow-300">About</a>
+      <a href="#contact" class="block px-3 py-2 rounded hover:bg-blue-700 hover:text-yellow-300">Contact</a>
+    </nav>
+  </div>
+</header>
+  <!-- HERO -->
+  <section class="bg-cover bg-center text-white" style="background-image: url('assets/services1.jpg');">
+    <div class="bg-black bg-opacity-50 py-24 text-center">
+      <h2 class="text-4xl font-bold">Expert Appliance Repair in Trichy</h2>
+      <p class="mt-4 text-lg">Washing Machines • Air Conditioners • Refrigerators • Microwaves</p>
+      <a href="#contact" class="mt-6 inline-block bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold shadow-lg">Book a Service</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-16 max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-10">Our Services</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white shadow rounded-xl p-6">
+        <img src="assets/washing-machine.webp" alt="">
+        <h4 class="font-bold text-xl">Washing Machine Repair</h4>
+        <p class="mt-2">Installation, repair & service for all brands.</p>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6">
+        <img src="assets/air-conditioner.jpg" alt="">
+        <h4 class="font-bold text-xl">Air Conditioner Services</h4>
+        <p class="mt-2">Installation, cooling issues, and servicing.</p>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6">
+        <img src="assets/refrigerator.webp" alt="">
+        <h4 class="font-bold text-xl">Refrigerator & Freezer</h4>
+        <p class="mt-2">Custom sizes, repair & cooling optimization.</p>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6">
+        <img src="assets/microwave-oven.webp" alt="">
+        <h4 class="font-bold text-xl">Microwave Oven Repair</h4>
+        <p class="mt-2">Quick fix for heating & power issues.</p>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6">
+        <img src="assets/juice-cooler.jpg" alt="">
+        <h4 class="font-bold text-xl">Oil Freezer Manufacturing</h4>
+        <p class="mt-2">Customized stainless steel oil freezers.</p>
+      </div>
+      <div class="bg-white shadow rounded-xl p-6">
+        <img src="assets/mortuary-freezer-box.jpg" alt="">
+        <h4 class="font-bold text-xl">Mortuary Refrigerator Manufacturing</h4>
+        <p class="mt-2">Dead body Refrigerator available.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="bg-blue-50 py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-3xl font-bold">About Us</h3>
+      <p class="mt-4 text-lg">
+        Jaya Garuda Enterprises Service Center is a community of technicians in Trichy with more than 10 years of experience.
+        We provide professional, reliable service for all major home appliance brands.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 px-6 max-w-4xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-6">Book a Service</h3>
+    <form id="enquiryForm" class="bg-white shadow-lg rounded-xl p-8">
+      <div class="grid md:grid-cols-2 gap-6">
+        <input type="text" id="name" placeholder="Your Name" class="border rounded-lg p-3 w-full" required>
+        <input type="tel" id="phone" placeholder="Phone Number" class="border rounded-lg p-3 w-full" required>
+        <input type="text" id="appliance" placeholder="Appliance (AC, Fridge, etc.)" class="border rounded-lg p-3 w-full" required>
+        <input type="text" id="issue" placeholder="Describe Issue" class="border rounded-lg p-3 w-full" required>
+      </div>
+      <textarea id="address" placeholder="Your Address" class="border rounded-lg p-3 w-full mt-6" rows="3"></textarea>
+      <button type="submit" class="mt-6 w-full bg-blue-800 text-white py-3 rounded-lg font-semibold hover:bg-blue-900">Send Enquiry via WhatsApp</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-800 text-white py-6 text-center">
+    <p>&copy; 2025 Jaya Garuda Enterprises Service Center, Trichy. All rights reserved.</p>
+  </footer>
+
+  <!-- JS to send enquiry -->
+   <script>
+  // Get the button and the mobile menu
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  // Add a click event listener to the button
+  menuButton.addEventListener('click', () => {
+    // Toggle the 'hidden' class on the mobile menu
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+  <script>
+    document.getElementById("enquiryForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const appliance = document.getElementById("appliance").value;
+      const issue = document.getElementById("issue").value;
+      const address = document.getElementById("address").value;
+
+      const message = `New Service Enquiry:%0AName: ${name}%0APhone: ${phone}%0AAppliance: ${appliance}%0AIssue: ${issue}%0AAddress: ${address}`;
+
+      // Replace with your WhatsApp business number (with country code)
+      window.open(`https://wa.me/919790253959?text=${message}`, "_blank");
+    });
+  </script>
+</body>
+</html>
