@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jeya Garuda Enterprise Service Center - Trichy</title>
-  <meta name="description" content="Jeya Garuda Enterprise Service Center in Trichy offers expert repair & service for Washing Machines, ACs, Refrigerators, and Microwaves. 10+ years technician experience." />
-  <meta name="keywords" content="appliance repair trichy, ac repair trichy, washing machine repair trichy, refrigerator repair trichy, microwave repair trichy, jeya garuda enterprises, jeya garuda service center, ac service trichy, fridge service trichy, oil freezer manufacturing, mortuary refrigerator trichy, tiruchirappalli appliance service, service center near me, washing machine service center near me, ac service near me, home appliance service near me, jeyagaruda, jeyagaruda enterprises" />
+  <meta name="description"
+    content="Jeya Garuda Enterprise Service Center in Trichy offers expert repair & service for Washing Machines, ACs, Refrigerators, and Microwaves. 10+ years technician experience." />
+  <meta name="keywords"
+    content="appliance repair trichy, ac repair trichy, washing machine repair trichy, refrigerator repair trichy, microwave repair trichy, jeya garuda enterprises, jeya garuda service center, ac service trichy, fridge service trichy, oil freezer manufacturing, mortuary refrigerator trichy, tiruchirappalli appliance service, service center near me, washing machine service center near me, ac service near me, home appliance service near me, jeyagaruda, jeyagaruda enterprises" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,182 +59,635 @@
   }
 }
 </script>
-</head>
-
-<body class="bg-gray-50 text-gray-800">
-  <!-- HEADER -->
- <header class="bg-blue-800 text-white shadow-lg">
-  
-  <div class="w-full mx-auto  flex justify-between items-center p-2">
-    <a class="flex items-center" href="index.html">
-    <img src="assets/icon.png" alt="Jeya Garuda Logo" class="h-10 w-15 mr-2"/>
-    <h1 class="text-xl font-bold">Jeya Garuda Enterprises</h1>
-    </a>
-    
-
-    <div class="md:hidden">
-      <button id="mobile-menu-button" class="text-white focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
-      </button>
-    </div>
-
-    <nav class="hidden md:flex space-x-3">
-      <a href="#services" class="px-3 py-2 rounded hover:text-yellow-300">Services</a>
-      <a href="#gallery" class="px-3 py-2 rounded hover:text-yellow-300">Gallery</a>
-      <a href="#about" class="px-3 py-2 rounded hover:text-yellow-300">About</a>
-      <a href="#contact" class="px-3 py-2 rounded hover:text-yellow-300">Contact</a>
-    </nav>
-  </div>
-
-  <div id="mobile-menu" class="hidden md:hidden">
-    <nav class="flex flex-col px-2 pt-2 pb-4 space-y-1">
-      <a href="#services" class="block px-3 py-2 rounded hover:bg-blue-700 hover:text-yellow-300">Services</a>
-      <a href="#gallery" class="block px-3 py-2 rounded hover:bg-blue-700 hover:text-yellow-300">Gallery</a>
-      <a href="#about" class="block px-3 py-2 rounded hover:bg-blue-700 hover:text-yellow-300">About</a>
-      <a href="#contact" class="block px-3 py-2 rounded hover:bg-blue-700 hover:text-yellow-300">Contact</a>
-    </nav>
-  </div>
   <style>
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+
     html {
       scroll-behavior: smooth;
     }
+
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes pulse-glow {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+      }
+
+      50% {
+        box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+      }
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-6px);
+      }
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    .animate-slide-left {
+      animation: slideInLeft 0.8s ease-out forwards;
+    }
+
+    .delay-100 {
+      animation-delay: 0.1s;
+    }
+
+    .delay-200 {
+      animation-delay: 0.2s;
+    }
+
+    .delay-300 {
+      animation-delay: 0.3s;
+    }
+
+    .delay-400 {
+      animation-delay: 0.4s;
+    }
+
+    .delay-500 {
+      animation-delay: 0.5s;
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Glassmorphism header */
+    .glass-header {
+      background: rgba(30, 58, 138, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* Service card gradient top border */
+    .service-card {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #1e40af, #3b82f6, #60a5fa);
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    /* Gallery hover */
+    .gallery-item {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+
+    /* Form focus styles */
+    .form-input {
+      transition: all 0.3s ease;
+      border: 2px solid #e2e8f0;
+      background: #f8fafc;
+    }
+
+    .form-input:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+      background: #fff;
+      outline: none;
+    }
+
+    /* Floating WhatsApp btn */
+    .whatsapp-float {
+      animation: pulse-glow 2s ease-in-out infinite, float 3s ease-in-out infinite;
+    }
+
+    /* CTA gradient button */
+    .cta-btn {
+      background: linear-gradient(135deg, #f59e0b, #f97316);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+    }
+
+    .cta-btn::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.15) 50%, transparent 70%);
+      transform: rotate(45deg) translateX(-100%);
+      transition: transform 0.6s ease;
+    }
+
+    .cta-btn:hover::after {
+      transform: rotate(45deg) translateX(100%);
+    }
+
+    /* Section decorative underline */
+    .section-title {
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #1e40af, #3b82f6);
+      border-radius: 99px;
+    }
+
+    /* Mobile menu transition */
+    .mobile-nav {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease-in-out, opacity 0.3s ease;
+      opacity: 0;
+    }
+
+    .mobile-nav.open {
+      max-height: 300px;
+      opacity: 1;
+    }
+
+    /* Hero gradient overlay */
+    .hero-overlay {
+      background: rgba(15, 23, 42, 0.72);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+    }
+
+    /* Sticky nav link hover */
+    .nav-link {
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #fbbf24;
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .nav-link:hover {
+      color: #fbbf24;
+    }
+
+    /* Footer gradient */
+    .footer-gradient {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 50%, #1e3a8a 100%);
+    }
+
+    /* Badge */
+    .trust-badge {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
   </style>
-</header>
+</head>
+
+<body class="text-gray-800"
+  style="padding-top: 64px; background-color: #f8fafc; background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(148,163,184,0.06) 10px, rgba(148,163,184,0.06) 11px); background-attachment: fixed;">
+  <!-- HEADER -->
+  <header class="glass-header text-white shadow-lg fixed w-full top-0 z-50">
+
+    <div class="w-full mx-auto flex justify-between items-center p-3 px-4 md:px-8">
+      <a class="flex items-center group" href="index.html">
+        <img src="assets/icon.png" alt="Jeya Garuda Logo"
+          class="h-10 w-15 mr-3 transition-transform duration-300 group-hover:scale-110" />
+        <h1 class="text-xl font-bold tracking-tight">Jeya Garuda Enterprises</h1>
+      </a>
+
+
+      <div class="md:hidden">
+        <button id="mobile-menu-button"
+          class="text-white focus:outline-none p-1 rounded-lg hover:bg-white hover:bg-opacity-10 transition-colors"
+          aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+
+      <nav class="hidden md:flex space-x-1">
+        <a href="#services" class="nav-link px-4 py-2 rounded-lg text-sm font-medium">Services</a>
+        <a href="#gallery" class="nav-link px-4 py-2 rounded-lg text-sm font-medium">Gallery</a>
+        <a href="#about" class="nav-link px-4 py-2 rounded-lg text-sm font-medium">About</a>
+        <a href="#contact" class="nav-link px-4 py-2 rounded-lg text-sm font-medium">Contact</a>
+      </nav>
+    </div>
+
+    <div id="mobile-menu" class="mobile-nav md:hidden">
+      <nav class="flex flex-col px-4 pt-2 pb-4 space-y-1 border-t border-white border-opacity-10">
+        <a href="#services"
+          class="mobile-link block px-4 py-3 rounded-lg hover:bg-white hover:bg-opacity-10 transition-colors font-medium text-sm">Services</a>
+        <a href="#gallery"
+          class="mobile-link block px-4 py-3 rounded-lg hover:bg-white hover:bg-opacity-10 transition-colors font-medium text-sm">Gallery</a>
+        <a href="#about"
+          class="mobile-link block px-4 py-3 rounded-lg hover:bg-white hover:bg-opacity-10 transition-colors font-medium text-sm">About</a>
+        <a href="#contact"
+          class="mobile-link block px-4 py-3 rounded-lg hover:bg-white hover:bg-opacity-10 transition-colors font-medium text-sm">Contact</a>
+      </nav>
+    </div>
+  </header>
+
   <!-- HERO -->
   <section class="bg-cover bg-center text-white" style="background-image: url('assets/services1.jpg');">
-    <div class="bg-black bg-opacity-50 py-24 text-center">
-      <h2 class="text-4xl font-bold">Expert Home Appliance Sales and Service in Trichy</h2>
-      <p class="mt-4 text-lg">Washing Machines • Air Conditioners • Refrigerators • Microwaves</p>
-      <a href="#contact" class="mt-6 inline-block bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold shadow-lg">Book a Service</a>
+    <div class="hero-overlay py-28 md:py-40 text-center px-6">
+      <div class="max-w-4xl mx-auto">
+        <div
+          class="trust-badge inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold mb-6 animate-fade-in"
+          style="opacity:0">
+          <svg class="w-4 h-4 mr-2 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+          </svg>
+          10+ Years of Trusted Service
+        </div>
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight animate-fade-in-up" style="opacity:0">
+          Expert Home Appliance Sales and Service in Trichy</h2>
+        <p class="mt-6 text-lg md:text-xl text-blue-100 font-medium animate-fade-in-up delay-200" style="opacity:0">
+          Washing Machines • Air Conditioners • Refrigerators • Microwave Ovens</p>
+        <a href="#contact"
+          class="cta-btn mt-8 inline-flex items-center text-gray-900 px-8 py-4 rounded-xl font-bold text-lg shadow-xl animate-fade-in-up delay-400"
+          style="opacity:0">
+          Book a Service
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section id="services" class="py-16 max-w-6xl mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center mb-10">Our Services</h3>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white shadow rounded-xl p-6">
-        <img src="assets/washing-machine.webp" alt="washing-machine">
-        <h4 class="font-bold text-xl">Washing Machine Repair</h4>
-        <p class="mt-2">Sales, Installation, repair & service for all brands.</p>
+  <section id="services" class="py-20 max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14 reveal">
+      <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 section-title">Our Services</h3>
+      <p class="mt-6 text-gray-500 max-w-2xl mx-auto">Professional repair and servicing for all major home appliance
+        brands with guaranteed satisfaction.</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+      <div class="service-card bg-white shadow-lg rounded-2xl overflow-hidden reveal">
+        <img src="assets/washing-machine.webp" alt="washing-machine" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-xl text-gray-900">Washing Machine Repair</h4>
+          <p class="mt-2 text-gray-600 leading-relaxed">Sales, Installation, repair & service for all brands.</p>
+        </div>
       </div>
-      <div class="bg-white shadow rounded-xl p-6">
-        <img src="assets/air-conditioner.jpg" alt="air-conditioner">
-        <h4 class="font-bold text-xl">Air Conditioner Services</h4>
-        <p class="mt-2">Sales, Installation, cooling issues, and servicing.</p>
+      <div class="service-card bg-white shadow-lg rounded-2xl overflow-hidden reveal">
+        <img src="assets/air-conditioner.jpg" alt="air-conditioner" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-xl text-gray-900">Air Conditioner Services</h4>
+          <p class="mt-2 text-gray-600 leading-relaxed">Sales, Installation, cooling issues, and servicing.</p>
+        </div>
       </div>
-      <div class="bg-white shadow rounded-xl p-6">
-        <img src="assets/refrigerator.webp" alt="refrigerator">
-        <h4 class="font-bold text-xl">Refrigerator & Freezer</h4>
-        <p class="mt-2">Sales, repair & cooling optimization.</p>
+      <div class="service-card bg-white shadow-lg rounded-2xl overflow-hidden reveal">
+        <img src="assets/refrigerator.webp" alt="refrigerator" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-xl text-gray-900">Refrigerator & Freezer</h4>
+          <p class="mt-2 text-gray-600 leading-relaxed">Sales, repair & cooling optimization.</p>
+        </div>
       </div>
-      <div class="bg-white shadow rounded-xl p-6">
-        <img src="assets/oil-freezer.webp" alt="oil-freezer">
-        <h4 class="font-bold text-xl">Oil Freezer Sales and Service</h4>
-        <p class="mt-2">Oil freezer / Ice cream freezer Sales, cooling issues, and servicing.</p>
+      <div class="service-card bg-white shadow-lg rounded-2xl overflow-hidden reveal">
+        <img src="assets/oil-freezer.webp" alt="oil-freezer" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-xl text-gray-900">Oil Freezer Sales and Service</h4>
+          <p class="mt-2 text-gray-600 leading-relaxed">Oil freezer / Ice cream freezer Sales, cooling issues, and
+            servicing.</p>
+        </div>
       </div>
-      <div class="bg-white shadow rounded-xl p-6">
-        <img src="assets/juice-cooler.jpg" alt="oil freezer">
-        <h4 class="font-bold text-xl">Juice Freezer Manufacturing</h4>
-        <p class="mt-2">Customized stainless steel juice freezers.</p>
+      <div class="service-card bg-white shadow-lg rounded-2xl overflow-hidden reveal">
+        <img src="assets/juice-cooler.jpg" alt="oil freezer" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-xl text-gray-900">Juice Freezer Manufacturing</h4>
+          <p class="mt-2 text-gray-600 leading-relaxed">Customized stainless steel juice freezers.</p>
+        </div>
       </div>
-      <div class="bg-white shadow rounded-xl p-6">
-        <img src="assets/mortuary-freezer-box.jpg" alt="mortuary-freezer">
-        <h4 class="font-bold text-xl">Mortuary Refrigerator Manufacturing</h4>
-        <p class="mt-2">Dead body Refrigerator available.</p>
+      <div class="service-card bg-white shadow-lg rounded-2xl overflow-hidden reveal">
+        <img src="assets/mortuary-freezer-box.jpg" alt="mortuary-freezer" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-xl text-gray-900">Mortuary Refrigerator Manufacturing</h4>
+          <p class="mt-2 text-gray-600 leading-relaxed">Dead body Refrigerator available.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="gallery" class="py-16 px-6 max-w-6xl mx-auto">
-    <h3 class="text-3xl font-bold text-center mb-10">Our Work Gallery</h3>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <img src="assets/g1.webp"  class="gallery-item w-full h-48 object-cover rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity">
-      <img src="assets/g2.webp" class="gallery-item w-full h-48 object-cover rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity">
-      <img src="assets/g3.webp"  class="gallery-item w-full h-48 object-cover rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity">
-      <img src="assets/g4.webp" class="gallery-item w-full h-48 object-cover rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity">
-      <img src="assets/g5.webp" class="gallery-item w-full h-48 object-cover rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity">
-      <img src="assets/g6.webp"  class="gallery-item w-full h-48 object-cover rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity">
-      <img src="assets/g7.webp" class="gallery-item w-full h-48 object-cover rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity">
-      <img src="assets/g8.webp"  class="gallery-item w-full h-48 object-cover rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity">
-      
+  <!-- GALLERY -->
+  <section id="gallery" class="py-20 px-6 bg-transparent">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14 reveal">
+        <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 section-title">Our Work Gallery</h3>
+        <p class="mt-6 text-gray-500 max-w-2xl mx-auto">A glimpse of our work across Trichy — quality service you can
+          trust.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="assets/g1.webp" alt="Service work 1"
+          class="gallery-item w-full h-52 object-cover rounded-xl shadow-md cursor-pointer">
+        <img src="assets/g2.webp" alt="Service work 2"
+          class="gallery-item w-full h-52 object-cover rounded-xl shadow-md cursor-pointer">
+        <img src="assets/g3.webp" alt="Service work 3"
+          class="gallery-item w-full h-52 object-cover rounded-xl shadow-md cursor-pointer">
+        <img src="assets/g4.webp" alt="Service work 4"
+          class="gallery-item w-full h-52 object-cover rounded-xl shadow-md cursor-pointer">
+        <img src="assets/g5.webp" alt="Service work 5"
+          class="gallery-item w-full h-52 object-cover rounded-xl shadow-md cursor-pointer">
+        <img src="assets/g6.webp" alt="Service work 6"
+          class="gallery-item w-full h-52 object-cover rounded-xl shadow-md cursor-pointer">
+        <img src="assets/g7.webp" alt="Service work 7"
+          class="gallery-item w-full h-52 object-cover rounded-xl shadow-md cursor-pointer">
+        <img src="assets/g8.webp" alt="Service work 8"
+          class="gallery-item w-full h-52 object-cover rounded-xl shadow-md cursor-pointer">
+      </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="bg-blue-50 py-16 px-6">
-    <div class="max-w-5xl mx-auto text-center">
-      <h3 class="text-3xl font-bold">About Us</h3>
-      <p class="mt-4 text-lg">
-        Jeya Garuda Enterprises Service Center is a community of technicians in Trichy with more than 10 years of experience.
+  <section id="about" class="py-20 px-6 bg-transparent">
+    <div class="max-w-5xl mx-auto text-center reveal">
+      <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-semibold mb-6">
+        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd"
+            d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+            clip-rule="evenodd" />
+        </svg>
+        Trusted Since 2015
+      </div><br>
+      <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 section-title">About Us</h3>
+      <p class="mt-8 text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+        Jeya Garuda Enterprises Service Center is a community of technicians in Trichy with more than 10 years of
+        experience.
         We provide professional, reliable service for all major home appliance brands.
       </p>
+      <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-md">
+          <div class="text-3xl font-extrabold text-blue-700">10+</div>
+          <div class="text-sm text-gray-500 mt-1 font-medium">Years Experience</div>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-md">
+          <div class="text-3xl font-extrabold text-blue-700">5000+</div>
+          <div class="text-sm text-gray-500 mt-1 font-medium">Happy Customers</div>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-md">
+          <div class="text-3xl font-extrabold text-blue-700">6+</div>
+          <div class="text-sm text-gray-500 mt-1 font-medium">Service Categories</div>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-md">
+          <div class="text-3xl font-extrabold text-blue-700">All</div>
+          <div class="text-sm text-gray-500 mt-1 font-medium">Major Brands</div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="py-16 px-6 max-w-4xl mx-auto">
-    <h3 class="text-3xl font-bold text-center mb-6">Book a Service</h3>
-    <form id="enquiryForm" class="bg-white shadow-lg rounded-xl p-8">
-      <div class="grid md:grid-cols-2 gap-6">
-        <input type="text" id="name" placeholder="Your Name" class="border rounded-lg p-3 w-full" required>
-        <input type="tel" id="phone" placeholder="Phone Number" class="border rounded-lg p-3 w-full" required>
-        <input type="text" id="appliance" placeholder="Appliance (AC, Fridge, etc.)" class="border rounded-lg p-3 w-full" required>
-        <input type="text" id="issue" placeholder="Describe Issue" class="border rounded-lg p-3 w-full" required>
+  <section id="contact" class="py-20 px-6 bg-transparent">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-10 reveal">
+        <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 section-title">Book a Service</h3>
+        <p class="mt-6 text-gray-500">Fill in the details below and we'll reach you via WhatsApp.</p>
       </div>
-      <textarea id="address" placeholder="Your Address" class="border rounded-lg p-3 w-full mt-6" rows="3"></textarea>
-      <button type="submit" class="mt-6 w-full bg-blue-800 text-white py-3 rounded-lg font-semibold hover:bg-blue-900">Send Enquiry via WhatsApp</button>
-    </form>
+      <form id="enquiryForm" class="bg-transparent shadow-xl rounded-2xl p-8 md:p-10 border border-gray-100 reveal">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" class="form-input rounded-xl p-3.5 w-full"
+              required>
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter phone number" class="form-input rounded-xl p-3.5 w-full"
+              required>
+          </div>
+          <div>
+            <label for="appliance" class="block text-sm font-semibold text-gray-700 mb-2">Appliance</label>
+            <input type="text" id="appliance" placeholder="AC, Fridge, Washing Machine, etc."
+              class="form-input rounded-xl p-3.5 w-full" required>
+          </div>
+          <div>
+            <label for="issue" class="block text-sm font-semibold text-gray-700 mb-2">Issue</label>
+            <input type="text" id="issue" placeholder="Describe the issue briefly"
+              class="form-input rounded-xl p-3.5 w-full" required>
+          </div>
+        </div>
+        <div class="mt-6">
+          <label for="address" class="block text-sm font-semibold text-gray-700 mb-2">Your Address</label>
+          <textarea id="address" placeholder="Enter your full address" class="form-input rounded-xl p-3.5 w-full"
+            rows="3"></textarea>
+        </div>
+        <button type="submit"
+          class="cta-btn mt-8 w-full text-gray-900 py-4 rounded-xl font-bold text-lg inline-flex items-center justify-center">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            <path
+              d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.917.918l4.462-1.494A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.331 0-4.512-.654-6.378-1.786l-.458-.274-2.65.887.886-2.648-.274-.457A9.955 9.955 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z" />
+          </svg>
+          Send Enquiry via WhatsApp
+        </button>
+      </form>
+    </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-blue-800 text-white py-10 text-center">
-  <div class="max-w-4xl mx-auto px-6">
-    <h3 class="text-xl font-bold">Jeya Garuda Enterprises</h3>
-    <p class="mt-2">
-      Trichy, Tamil Nadu 620001
-    </p>
-    <p class="mt-2">
-      Service Area: Trichy & Surrounding Areas
-    </p>
-    Call us:
-    <a href="tel:+919790505244" class="mt-2 inline-block text-yellow-300 font-semibold text-lg hover:underline">
-       +91 97905 05244
-    </a>
-    <a href="tel:+919080877708" class="mt-2 inline-block text-yellow-300 font-semibold text-lg hover:underline">
-      | +91 90808 77708
-    </a>
-    <a href="mailto:jayagarudaenterprises@gmail.com" class="mt-2 block text-yellow-300 font-semibold text-lg hover:underline">
-      Email us: jayagarudaenterprises@gmail.com
-    </a>
-    <p class="mt-4 text-sm text-gray-300">
-      &copy; 2025 Jeya Garuda Enterprises Service Center, Trichy. All rights reserved.
-    </p>
-  </div>
-</footer>
+  <footer class="footer-gradient text-white py-12">
+    <div class="max-w-5xl mx-auto px-6">
+      <!-- Top: Logo + Description -->
+      <div class="text-center mb-8">
+        <div class="flex items-center justify-center mb-3">
+          <img src="assets/icon.png" alt="Logo" class="h-8 mr-2 rounded">
+          <h3 class="text-xl font-bold">Jeya Garuda Enterprises</h3>
+        </div>
+        <p class="text-blue-200 text-sm leading-relaxed max-w-md mx-auto">
+          Expert home appliance repair and service center with 10+ years of experience in Trichy.
+        </p>
+      </div>
 
-<a href="#" id="scrollTopButton" class="hidden fixed bottom-6 right-6 bg-blue-800 text-white p-3 rounded-full shadow-lg hover:bg-blue-900 transition-opacity z-30">
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-  </SVG>
-</a>
+      <!-- Quick Links -->
+      <div class="text-center mb-8">
+        <nav class="flex flex-wrap justify-center gap-4 text-blue-200 text-sm">
+          <a href="#services" class="hover:text-yellow-300 transition-colors">Services</a>
+          <span class="text-blue-400">•</span>
+          <a href="#gallery" class="hover:text-yellow-300 transition-colors">Gallery</a>
+          <span class="text-blue-400">•</span>
+          <a href="#about" class="hover:text-yellow-300 transition-colors">About Us</a>
+          <span class="text-blue-400">•</span>
+          <a href="#contact" class="hover:text-yellow-300 transition-colors">Book a Service</a>
+        </nav>
+      </div>
 
-  <!-- JS to send enquiry -->
-   <script>
-  // Get the button and the mobile menu
-  const menuButton = document.getElementById('mobile-menu-button');
-  const mobileMenu = document.getElementById('mobile-menu');
+      <!-- Contact Info -->
+      <div class="text-center mb-8">
+        <p class="text-blue-200 text-sm">
+          Trichy, Tamil Nadu 620001 &nbsp;|&nbsp; Service Area: Trichy & Surrounding Areas
+        </p>
+        <div class="mt-3 flex flex-wrap justify-center items-center gap-2">
+          <span class="text-sm text-blue-200">Call us:</span>
+          <a href="tel:+919790505244" class="text-yellow-200 font-semibold hover:underline text-sm">
+            +91 97905 05244
+          </a>
+          <span class="text-blue-400">|</span>
+          <a href="tel:+919080877708" class="text-yellow-200 font-semibold hover:underline text-sm">
+            +91 90808 77708
+          </a>
+        </div>
+        <a href="mailto:jayagarudaenterprises@gmail.com"
+          class="mt-2 inline-block text-yellow-200 font-semibold text-sm hover:underline">
+          Email us: jayagarudaenterprises@gmail.com
+        </a>
+      </div>
 
-  // Add a click event listener to the button
-  menuButton.addEventListener('click', () => {
-    // Toggle the 'hidden' class on the mobile menu
-    mobileMenu.classList.toggle('hidden');
-  });
-</script>
+      <!-- Copyright -->
+      <div class="border-t border-white border-opacity-10 pt-6 text-center">
+        <p class="text-sm text-blue-200">
+          &copy; 2026 Jeya Garuda Enterprises Service Center, Trichy. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919790505244" target="_blank" rel="noopener noreferrer"
+    class="whatsapp-float fixed bottom-24 right-6 bg-green-500 text-white p-4 rounded-full shadow-xl z-40 hover:bg-green-600 transition-colors"
+    aria-label="Chat on WhatsApp">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+      <path
+        d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.917.918l4.462-1.494A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.331 0-4.512-.654-6.378-1.786l-.458-.274-2.65.887.886-2.648-.274-.457A9.955 9.955 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z" />
+    </svg>
+  </a>
+
+  <!-- Scroll to Top Button -->
+  <a href="#" id="scrollTopButton"
+    class="hidden fixed bottom-6 right-6 p-3 rounded-full shadow-xl z-30 transition-all duration-300 hover:scale-110"
+    style="background: linear-gradient(135deg, #1e40af, #3b82f6); color: white;">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+      stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </a>
+
+  <!-- JS -->
   <script>
-    document.getElementById("enquiryForm").addEventListener("submit", function(e) {
+    // Mobile menu toggle with smooth animation
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+      });
+    });
+  </script>
+  <script>
+    document.getElementById("enquiryForm").addEventListener("submit", function (e) {
       e.preventDefault();
       const name = document.getElementById("name").value;
       const phone = document.getElementById("phone").value;
@@ -243,7 +703,7 @@
   </script>
   <script>
     const scrollTopButton = document.getElementById('scrollTopButton');
-    
+
     window.addEventListener('scroll', () => {
       // Show button if scrolled down 200px
       if (window.scrollY > 200) {
@@ -253,5 +713,20 @@
       }
     });
   </script>
+  <script>
+    // Scroll Reveal with Intersection Observer
+    const revealElements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    revealElements.forEach(el => observer.observe(el));
+  </script>
 </body>
+
 </html>
